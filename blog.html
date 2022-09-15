@@ -11,8 +11,50 @@
 </head>
 
 <body>
-    <div class="container">
-
+    <div class="container mt-5">
+        <h2 class="text-center mb-5">Welcome to our Blog.</h2>
+        <!-- Question-answer-01 -->
+        <h3 class="text-center mb-4">What is the difference between local storage and session storage?</h3>
+        <table class="table table-hover table-bordered fs-5">
+            <thead class="text-center">
+                <tr>
+                    <th scope="col">Serial</th>
+                    <th scope="col">Local Storage</th>
+                    <th scope="col"> Session Storage</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>The storage capacity of local storage is 5MB/10MB</td>
+                    <td>The storage capacity of session storage is 5MB</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>As it is not session-based, it must be deleted via javascript or manually</td>
+                    <td>It’s session-based and works per window or tab. This means that data is stored only for the
+                        duration of a session, i.e., until the browser (or tab) is closed</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>It is accessible from any window</td>
+                    <td>It is accessible from the same tab</td>
+                </tr>
+                <tr>
+                    <th scope="row">4</th>
+                    <td>Local storage maintains data across all instances of a site, whether they're in different tabs
+                        or windows.</td>
+                    <td>Session storage is unique to each browser tab.</td>
+                </tr>
+                <tr>
+                    <th scope="row">5</th>
+                    <td>If you want to store site preferences or cache long-term data, local storage is appropriate.
+                    </td>
+                    <td>If you wish to store data only while a user interacts with your site, then session storage is
+                        ideal.</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 
     <!-- bootstrap cdn-->
